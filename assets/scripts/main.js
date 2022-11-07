@@ -24,7 +24,9 @@ function getRecipesFromStorage() {
   // A9. TODO - Complete the functionality as described in this function
   //           header. It is possible in only a single line, but should
   //           be no more than a few lines.
-  return localStorage.getItem('recipes')
+  let jsonRecipes = localStorage.getItem('recipes');
+  return JSON.parse(jsonRecipes);
+
 
 }
 
@@ -44,7 +46,7 @@ function addRecipesToDocument(recipes) {
   let main = document.getElementsByTagName("main")[0]
   for(let i = 0; i < recipes.length; i++){
     let recipe = recipes[i];
-    let recipe_card = RecipeCard();
+    let recipe_card = document.createElement('recipe-card');
     recipe_card.data = recipe;
     main.appendChild(recipe_card);
 
