@@ -182,8 +182,8 @@ class RecipeCard extends HTMLElement {
     article.innerHTML = `
   <img src="${data['imgSrc']}"
     alt="${data['imgAlt']}">
-  <p class="${data['titleTxt']}">
-    <a href="${data['titleLnk']}">Title</a>
+  <p class="title">
+    <a href="${data['titleLnk']}">${data['titleTxt']}</a>
   </p>
   <p class="organization">${data['organization']}</p>
   <div class="rating">
@@ -191,7 +191,7 @@ class RecipeCard extends HTMLElement {
     <img src="/assets/images/icons/${data['rating']}-star.svg" alt="${data['rating']} stars">
     <span>(${data['numRatings']})</span>
   </div>
-  <time>${data['lengthTime']} min</time>
+  <time>${data['lengthTime']}</time>
   <p class="ingredients">
     ${data['ingredients']}
   </p>
