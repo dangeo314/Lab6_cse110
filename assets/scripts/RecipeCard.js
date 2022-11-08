@@ -91,7 +91,7 @@ class RecipeCard extends HTMLElement {
     color: #70757A;
     font-size: 12px;
   }
-`
+  `
     // A5. TODO - Append the <style> and <article> elements to the Shadow DOM
     this.shadowRoot.append(style, article);
 
@@ -131,53 +131,6 @@ class RecipeCard extends HTMLElement {
     //           do not nest an <article> inside another <article>). You should use Template
     //           literals (template strings) and element.innerHTML for this.
 
-
-    // img = document.createElement("img");
-    // img.setAttribute("src", data["imgSrc"]);
-    // img.setAttribute("alt", data["imgAlt"]);
-    // this.article.appendChild(img)
-
-    // title = document.createElement("p");
-    // title.setAttribute("class", "title");
-    // this.article.appendChild(title);
-    
-    // title_link = document.createElement("a");
-    // title_link.setAttribute("href", data["titleLnk"]);
-    // titlelink.innerHTML = data["titleTxt"];
-    // title.appendChild(title_link);
-    
-
-    // org = document.createElement("p");
-    // titleText.setAttribute("class", "organization");
-    // org.innerHTML = data["organization"];
-    // this.article.appendChild(org);
-    
-
-    // rating_div = document.createElement("div");
-    // rating_div.setAttribute("class", "rating");
-
-    // rating_val = document.createElement("span");
-    // rating_val.innerHTML = data['rating'];
-    // rating_div.appendChild(rating_val);
-
-    // rating_pic = document.createElement("img");
-    // num_stars = data['rating'];
-    // rating_pic.setAttribute('src', '/assets/images/icons/${num_stars}-star.svg');
-    // rating_pic.setAttribute('alt', "${num_stars} stars");
-    // rating_div.appendChild(rating_pic);
-    
-    // amount_ratings = document.createElement('span');
-    // num_ratings = data['numRatings'];
-    // num_ratings.innerHTML = "(" + num_ratings + ")";
-    // rating_div.appendChild(amount_ratings);
-
-    // length_time = document.createElement('time');
-    // num_mins = data['lengthTime'];
-    // length_time.innerHTML = "${num_mins} min";
-
-    // ingredients = document.createElement('p');
-    // ingredients.setAttribute('class', "ingredients");
-    // ingredients.innerHTML = data['ingredients'];
 
     article.innerHTML = `
   <img src="${data['imgSrc']}"
